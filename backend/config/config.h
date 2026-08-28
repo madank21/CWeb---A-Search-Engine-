@@ -1,0 +1,43 @@
+#ifndef CWEB_CONFIG_H
+#define CWEB_CONFIG_H
+
+#include <stddef.h>
+
+#define CWEB_VERSION "2.0.0"
+#define CWEB_DEFAULT_HOST "0.0.0.0"
+#define CWEB_DEFAULT_PORT 8080
+
+#define CWEB_DATA_DIR "./data"
+#define CWEB_PAGES_DIR "./data/pages"
+#define CWEB_INDEX_DIR "./data/index"
+
+#define CWEB_DEFAULT_RANKING "bm25"
+#define CWEB_BM25_K1 1.2f
+#define CWEB_BM25_B 0.75f
+
+#define CWEB_CACHE_SIZE 256
+#define CWEB_MAX_RESULTS 50
+#define CWEB_DEFAULT_PAGE_SIZE 10
+#define CWEB_MAX_QUERY_LEN 256
+#define CWEB_MAX_QUERY_DEPTH 20
+#define CWEB_MAX_BODY_BYTES 1048576 /* 1 MB */
+#define CWEB_MAX_HEADER_BYTES 8192  /* 8 KB */
+
+#define CWEB_RATE_LIMIT_RPS 20
+#define CWEB_RATE_LIMIT_BURST 40
+#define CWEB_THREAD_POOL_SIZE 8
+
+#define CWEB_MIN_TOKEN_LEN 2
+#define CWEB_MAX_TOKEN_LEN 40
+
+#define CWEB_FUZZY_TRIGGER_THRESHOLD 3
+#define CWEB_FUZZY_MAX_DISTANCE 2
+
+/* Field weights */
+#define CWEB_WEIGHT_TITLE 4.0f
+#define CWEB_WEIGHT_HEADING 3.0f
+#define CWEB_WEIGHT_KEYWORDS 3.0f
+#define CWEB_WEIGHT_DESCRIPTION 2.0f
+#define CWEB_WEIGHT_BODY 1.0f
+
+#endif /* CWEB_CONFIG_H */
