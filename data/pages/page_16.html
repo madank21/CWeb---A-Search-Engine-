@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Distributed Key-Value Stores and LSM Trees</title>
+    <meta name="category" content="Database Systems">
+    <meta name="keywords" content="lsm tree, rocksdb, key value, memtable, sstable, write amplification">
+    <meta name="description" content="Architecture of Log-Structured Merge-Trees, memtables, SSTables, compaction, and high write throughput.">
+</head>
+<body>
+    <h1>Write-Optimized Storage with Log-Structured Merge-Trees</h1>
+    <p>LSM-Trees optimize write performance by appending writes to an in-memory memtable and sequentially flushing sorted SSTables to disk. Background compaction merges overlapping key ranges.</p>
+    <h2>Related Engineering Topics</h2>
+    <p>Read more on related architecture topics in <a href="/page/14">Document #14</a> and <a href="/page/18">Document #18</a>.</p>
+</body>
+</html>
